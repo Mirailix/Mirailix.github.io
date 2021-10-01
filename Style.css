@@ -34,9 +34,19 @@ tr:nth-child(even){
 table,th,td{
     border:1px solid black;
 }
+form{
+    background-color:gray;
+    margin-bottom:10px;
+}
+ul{
+    background-color:gray;
+}
+table{
+    margin-bottom:10px;
+}
 @media screen and (min-width:800px)
 {
-    #content,header div,footer p
+    #content,header div,footer p,nav
     {
         max-width 960px;
     }
