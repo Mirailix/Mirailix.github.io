@@ -1,141 +1,150 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="windows-1251"/>
 <head>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="Style.css" />
     <title>css</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="https://habrastorage.org/getpro/habr/post_images/ca6/69e/39a/ca669e39a6b1f84989c66365df479702.jpg" width="100" />
+            <img src="https://habrastorage.org/getpro/habr/post_images/ca6/69e/39a/ca669e39a6b1f84989c66365df479702.jpg" width="107" />
             <h1>Шапка сайта</h1>
         </div>
         <br />
     </header>
-    <div id="content">
+    <div class="container">
+        <div class="row gy-5">
+            <div class="col-12 order-1">
+                <nav>
+                    <a class="nav-link active" href="">Ссылка 1</a>
+                    <a class="nav-link active" href="">Ссылка 2</a>
+                    <a class="nav-link active" href="">Ссылка 3</a>
+                    <br />
+                </nav>
+            </div>
+            <div class="col-12 order-1">
 
-        <nav>
-            <a href="">Ссылка 1</a>
-            <a href="">Ссылка 2</a>
-            <a href="">Ссылка 3</a>
-            <br />
-        </nav>
+                <ul>
+                    <li> <a href="http://example.com" id="ancor">example.com;</a></li>
+                    <li> <a href="https://example.com"> example.com в протоколе https;</a></li>
+                    <li> <a href="https://en.wikipedia.org/wiki/Setagaya_Art_Museum#Structure">ссылка на фрагмент страницы некоторого сайта; </a></li>
+                    <li><a href="#ancor">ссылка на фрагмент текущей страницы;</a></li>
+                    <li><a href="https://example.com/products/women?category=dresses&color..">ссылкa с двумя параметрами в URL</a></li>
+                </ul>
+            </div>
+            <div class="col-12 order-3 order-sm-2">
 
-        <ul>
-            <li> <a href="http://example.com" id="ancor">example.com;</a></li>
-            <li> <a href="https://example.com"> example.com в протоколе https;</a></li>
-            <li> <a href="https://en.wikipedia.org/wiki/Setagaya_Art_Museum#Structure">ссылка на фрагмент страницы некоторого сайта; </a></li>
-            <li><a href="#ancor">ссылка на фрагмент текущей страницы;</a></li>
-            <li><a href="https://example.com/products/women?category=dresses&color..">ссылкa с двумя параметрами в URL</a></li>
-        </ul>
+                <form action="/"
+                      method="POST">
+                    <label>
+                        Имя:<br />
+                        <input name="field-name-1"
+                               value="начальное значение" />
+                    </label><br />
 
-        <form action="/"
-              method="POST">
-            <label>
-                Имя:<br />
-                <input name="field-name-1"
-                       value="начальное значение" />
-            </label><br />
+                    <label>
+                        email:<br />
+                        <input name="field-email"
+                               value="test@example.com"
+                               type="email" />
+                    </label><br />
 
-            <label>
-                email:<br />
-                <input name="field-email"
-                       value="test@example.com"
-                       type="email" />
-            </label><br />
+                    <label>
+                        Дата рождения:<br />
+                        <input name="field-date"
+                               value="2019-08-13"
+                               type="date" />
+                    </label><br />
 
-            <label>
-                Дата рождения:<br />
-                <input name="field-date"
-                       value="2019-08-13"
-                       type="date" />
-            </label><br />
+                    Пол:<br />
+                    <label>
+                        <input type="radio" checked="checked"
+                               name="radio-group-1" value="Значение1" />
+                        мужской
+                    </label>
+                    <label>
+                        <input type="radio"
+                               name="radio-group-1" value="Значение2" />
+                        женский
+                    </label><br />
 
-            Пол:<br />
-            <label>
-                <input type="radio" checked="checked"
-                       name="radio-group-1" value="Значение1" />
-                мужской
-            </label>
-            <label>
-                <input type="radio"
-                       name="radio-group-1" value="Значение2" />
-                женский
-            </label><br />
+                    Количество конечностей:<br />
+                    <label>
+                        <input type="radio"
+                               name="radio-group-2" value="Значение1" />
+                        2
+                    </label>
+                    <label>
+                        <input type="radio"
+                               name="radio-group-2" value="Значение2" />
+                        3
+                    </label><br />
+                    <label>
+                        <input type="radio" checked="checked"
+                               name="radio-group-2" value="Значение3" />
+                        4
+                    </label><br />
 
-            Количество конечностей:<br />
-            <label>
-                <input type="radio"
-                       name="radio-group-2" value="Значение1" />
-                2
-            </label>
-            <label>
-                <input type="radio"
-                       name="radio-group-2" value="Значение2" />
-                3
-            </label><br />
-            <label>
-                <input type="radio" checked="checked"
-                       name="radio-group-2" value="Значение3" />
-                4
-            </label><br />
+                    <label>
+                        Сверхспособности:
+                        <br />
+                        <select name="superpowers-4[]"
+                                multiple="multiple">
+                            <option value="immortality">бессмертие</option>
+                            <option value="passing_through_walls">прохождение сквозь стены</option>
+                            <option value="levitation">левитация</option>
+                        </select>
+                    </label><br />
 
-            <label>
-                Сверхспособности:
-                <br />
-                <select name="superpowers-4[]"
-                        multiple="multiple">
-                    <option value="immortality">бессмертие</option>
-                    <option value="passing_through_walls">прохождение сквозь стены</option>
-                    <option value="levitation">левитация</option>
-                </select>
-            </label><br />
-
-            <label>
-                Биография:<br />
+                    <label>
+                        Биография:<br />
 <textarea name="field-name-2">Человек со способностями(нет)</textarea>
-            </label><br />
+                    </label><br />
 
-            С контрактом ознакомлен(а)
-            <br />
-            <label>
-                <input type="checkbox" checked="checked"
-                       name="check-1" />
-                Принимаю условия
-            </label><br />
+                    С контрактом ознакомлен(а)
+                    <br />
+                    <label>
+                        <input type="checkbox" checked="checked"
+                               name="check-1" />
+                        Принимаю условия
+                    </label><br />
 
-            <input type="submit" value="Отправить" />
-        </form>
+                    <input type="submit" value="Отправить" />
+                </form>
+            </div>
+            <div class="col-12 order-2 order-sm-3">
 
-        <table>
-            <tr>
-                <th>Колонка 1</th>
-                <th>Колонка 2</th>
-                <th>Колонка 3</th>
-            </tr>
-            <tr>
-                <td colspan="2">Ячейка 11 объединенная с 12</td>
-                <td>Ячейка 13</td>
-            </tr>
-            <tr>
-                <td>Ячейка 21</td>
-                <td>Ячейка 22</td>
-                <td>Ячейка 23</td>
-            </tr>
-            <tr>
-                <td>Ячейка 31</td>
-                <td colspan="2">Ячейка 32 объединенная с 32</td>
-            </tr>
-            <tr>
-                <td>Ячейка 41</td>
-                <td>Ячейка 42</td>
-                <td>Ячейка 43</td>
-            </tr>
-        </table>
-
-    </div>
+                <table class="table table-stripped">
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Ячейка 11 объединенная с 12</td>
+                        <td>Ячейка 13</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                        <td>Ячейка 23</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 31</td>
+                        <td colspan="2">Ячейка 32 объединенная с 32</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 41</td>
+                        <td>Ячейка 42</td>
+                        <td>Ячейка 43</td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
     <footer>
         <p>© 2021</p>
     </footer>
